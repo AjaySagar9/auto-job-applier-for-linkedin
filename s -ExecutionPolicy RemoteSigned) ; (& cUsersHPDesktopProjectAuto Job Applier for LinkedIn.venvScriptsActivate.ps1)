@@ -1,0 +1,18 @@
+[35mLICENSE[m[36m:[m[32m328[m[36m:[msource code form), and must require no special [1;31mpassword[m or key for
+Binary file [35mchromedriver/chromedriver.exe[m matches
+[35mmodules/__deprecated__/__setup__/config.py[m[36m:[m[32m48[m[36m:[m[1;31mpassword[m = "example_[1;31mpassword[m"      # Enter your [1;31mpassword[m in the quotes
+[35mmodules/__deprecated__/__setup__/config.py[m[36m:[m[32m237[m[36m:[mchatGPT_[1;31mpassword[m = "example_[1;31mpassword[m"
+[35mmodules/__deprecated__/resume_generator.py[m[36m:[m[32m7[m[36m:[mfrom modules.__deprecated__.__setup__.config import chatGPT_username, chatGPT_[1;31mpassword[m, chatGPT_resume_chat_title, click_gap
+[35mmodules/__deprecated__/resume_generator.py[m[36m:[m[32m35[m[36m:[m    # Find the username and [1;31mpassword[m fields and fill them with user credentials
+[35mmodules/__deprecated__/resume_generator.py[m[36m:[m[32m47[m[36m:[m        text_input_by_ID(driver, "[1;31mpassword[m", chatGPT_[1;31mpassword[m)
+[35mmodules/validator.py[m[36m:[m[32m147[m[36m:[m    check_string([1;31mpassword[m, "[1;31mpassword[m", min_length=5)
+[35mmodules/validator.py[m[36m:[m[32m217[m[36m:[m    # validate_String(chatGPT_[1;31mpassword[m, "chatGPT_[1;31mpassword[m")
+[35mrunAiBot.py[m[36m:[m[32m26[m[36m:[mfrom config.secrets import use_AI, username, [1;31mpassword[m, ai_provider
+[35mrunAiBot.py[m[36m:[m[32m107[m[36m:[m    * Tries to login using given `username` and `[1;31mpassword[m` from `secrets.py`
+[35mrunAiBot.py[m[36m:[m[32m111[m[36m:[m    # Find the username and [1;31mpassword[m fields and fill them with user credentials
+[35mrunAiBot.py[m[36m:[m[32m113[m[36m:[m    if username == "username@example.com" and [1;31mpassword[m == "example_[1;31mpassword[m":
+[35mrunAiBot.py[m[36m:[m[32m114[m[36m:[m        pyautogui.alert("User did not configure username and [1;31mpassword[m in secrets.py, hence can't login automatically! Please login manually!", "Login Manually","Okay")
+[35mrunAiBot.py[m[36m:[m[32m115[m[36m:[m        print_lg("User did not configure username and [1;31mpassword[m in secrets.py, hence can't login automatically! Please login manually!")
+[35mrunAiBot.py[m[36m:[m[32m119[m[36m:[m        wait.until(EC.presence_of_element_located((By.LINK_TEXT, "Forgot [1;31mpassword[m?")))
+[35mrunAiBot.py[m[36m:[m[32m126[m[36m:[m            text_input_by_ID(driver, "[1;31mpassword[m", [1;31mpassword[m, 1)
+[35mrunAiBot.py[m[36m:[m[32m128[m[36m:[m            print_lg("Couldn't find [1;31mpassword[m field.")
